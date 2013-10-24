@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using ProjectLog.Core.Controllers;
+using ProjectLog.Droid.Views;
 
 namespace ProjectLog.Droid
 {
@@ -32,6 +33,7 @@ namespace ProjectLog.Droid
                 {
                     var projects = controller.GetActiveProjects();
                     if (projects != null) button.Text = "Active Projects (" + projects.Length + ")";
+                    this.StartActivity(new Intent(this.ApplicationContext, typeof(GenericView)));
                 };
         }
     }
