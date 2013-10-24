@@ -31,9 +31,9 @@ namespace ProjectLog.Droid
 
             button.Click += delegate
                 {
-                    var projects = controller.GetActiveProjects();
-                    if (projects != null) button.Text = "Active Projects (" + projects.Length + ")";
-                    this.StartActivity(new Intent(this.ApplicationContext, typeof(GenericView)));
+                    //var projects = controller.GetActiveProjects();
+                    //if (projects != null) button.Text = "Active Projects (" + projects.Length + ")";
+                    this.StartActivity(new Intent(this, typeof(GenericView)));
                 };
         }
     }
