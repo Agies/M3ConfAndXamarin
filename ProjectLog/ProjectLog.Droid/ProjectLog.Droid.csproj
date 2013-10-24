@@ -47,11 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity1.cs" />
+    <Compile Include="Views\HomeView.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
@@ -70,9 +71,12 @@
   <ItemGroup>
     <Folder Include="Business\" />
     <Folder Include="DataAccess\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ProjectLog.Contracts\ProjectLog.Contracts.csproj">
+      <Project>{FAA52C78-5025-4B9B-9F2D-5C13F6B89E1F}</Project>
+      <Name>ProjectLog.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProjectLog.Core\ProjectLog.Core.csproj">
       <Project>{f37a2a9b-00ff-4f08-bc30-feecb7a6798f}</Project>
       <Name>ProjectLog.Core</Name>

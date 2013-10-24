@@ -53,8 +53,13 @@
   <ItemGroup>
     <Compile Include="ProjectControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewController\HomeControllerTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ProjectLog.Contracts\ProjectLog.Contracts.csproj">
+      <Project>{faa52c78-5025-4b9b-9f2d-5c13f6b89e1f}</Project>
+      <Name>ProjectLog.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProjectLog.Core\ProjectLog.Core.csproj">
       <Project>{f37a2a9b-00ff-4f08-bc30-feecb7a6798f}</Project>
       <Name>ProjectLog.Core</Name>
@@ -65,8 +70,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewController\" />
     <Folder Include="WebController\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
