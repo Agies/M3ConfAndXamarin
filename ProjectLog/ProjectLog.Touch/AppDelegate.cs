@@ -16,9 +16,12 @@ namespace ProjectLog.Touch
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             window = new UIWindow(UIScreen.MainScreen.Bounds);
+			viewController = new MyViewController();
+			var navigationController = new UINavigationController (viewController);
+			navigationController.NavigationBar.Translucent = false;
+            
 
-            viewController = new MyViewController();
-            window.RootViewController = viewController;
+			window.RootViewController = navigationController;
 
             window.MakeKeyAndVisible();
 

@@ -25,7 +25,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -36,7 +35,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -74,7 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProjectLog.Core\ProjectLog.Core.csproj">
-      <Project>{f37a2a9b-00ff-4f08-bc30-feecb7a6798f}</Project>
+      <Project>{F37A2A9B-00FF-4F08-BC30-FEECB7A6798F}</Project>
       <Name>ProjectLog.Core</Name>
     </ProjectReference>
   </ItemGroup>
