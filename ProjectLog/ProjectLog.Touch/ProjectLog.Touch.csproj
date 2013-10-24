@@ -79,12 +79,16 @@
     <None Include="app.config" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\GenericView.cs" />
+    <Compile Include="Views\GenericView.designer.cs">
+      <DependentUpon>GenericView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MyViewController.cs" />
     <BundleResource Include="Resources\Default.png" />
-    <BundleResource Include="Resources\Default@2x.png" />
-    <BundleResource Include="Resources\Default-568h@2x.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Business\" />
@@ -99,9 +103,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProjectLog.Core\ProjectLog.Core.csproj">
-      <Project>{f37a2a9b-00ff-4f08-bc30-feecb7a6798f}</Project>
+      <Project>{F37A2A9B-00FF-4F08-BC30-FEECB7A6798F}</Project>
       <Name>ProjectLog.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <InterfaceDefinition Include="Views\GenericView.xib" />
+  </ItemGroup>
 </Project>

@@ -36,12 +36,15 @@ namespace ProjectLog.Touch
             button.TouchUpInside += (object sender, EventArgs e) =>
             {
                 button.SetTitle(String.Format("clicked {0} times", numClicks++), UIControlState.Normal);
+				NavigationController.PushViewController (new GenericView(), true);
             };
 
             button.AutoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleTopMargin |
                 UIViewAutoresizing.FlexibleBottomMargin;
 
             View.AddSubview(button);
+
+
         }
 
     }

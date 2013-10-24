@@ -1,0 +1,31 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.6.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjectLog.Touch/MyViewController.cs">
+    <Files>
+      <File FileName="ProjectLog.Touch/Main.cs" Line="1" Column="1" />
+      <File FileName="ProjectLog.Touch/MyViewController.cs" Line="39" Column="71" />
+      <File FileName="ProjectLog.Touch/AppDelegate.cs" Line="20" Column="73" />
+      <File FileName="ProjectLog.Touch/Views/GenericView.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="ProjectLog.Touch" expanded="True">
+            <Node name="Views" expanded="True" />
+            <Node name="MyViewController.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
